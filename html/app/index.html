@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="travosApp"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="travosApp"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="travosApp"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="travosApp"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/signin.css">
+        <link rel="stylesheet" href="../css/dashboard.css">
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -23,24 +24,17 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container">
-
-          <form class="form-signin" role="form">
-            <h2 class="form-signin-heading">Please sign in</h2>
-            <input type="email" class="form-control" placeholder="Email address" required autofocus>
-            <input type="password" class="form-control" placeholder="Password" required>
-            <label class="checkbox">
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-          </form>
-
-        </div> <!-- /container -->
+        <div ng-view></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="../js/vendor/angular.min.js"></script>
+        <script src="../js/vendor/angular-route.min.js"></script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
+        <script src="../app/app.js"></script>
+        <script src="../app/controllers/loginController.js"></script>
+        <script src="../app/controllers/dashboardController.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
