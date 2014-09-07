@@ -32,5 +32,8 @@ app.use(express.static(__dirname));
 // this will allow "GET /style.css" instead of "GET /css/style.css":
 //app.use(express.static(__dirname + '/public/css'));
 
-app.listen(3000);
-console.log('listening on port 3000');
+
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
