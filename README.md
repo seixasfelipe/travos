@@ -3,7 +3,7 @@ Travos web application.
 
 ### Contributing
 	clone this repo
-	
+
 ### Resolving dependencies
 	npm install
 
@@ -17,3 +17,6 @@ Travos web application.
 
 ### Staging environment
 	http://travos-staging.herokuapp.com/html/app/index.html
+
+### Versioning
+	[Semver.org](http://semver.org/)
