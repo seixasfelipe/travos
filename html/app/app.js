@@ -19,6 +19,10 @@
                 controller: 'DashboardController',
                 templateUrl: viewBase + 'dashboard/index.html'
             })
+            .when('/products', {
+                controller: 'ProductsController',
+                templateUrl: viewBase + 'products/index.html'
+            })
             .otherwise({ redirectTo: '/signin' });
 
     }]);
